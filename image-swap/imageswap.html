@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> Image Swap - JQuery </title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">	
+
+	<script>
+          $(document).ready(function(){
+		    $("img").click(function(e) {
+			    var newclass = $(this).attr("id");
+				var oldclass = $("#full-size").attr('class');
+				$("#full-size").fadeOut(function() {
+				    $("#full-size").removeClass(oldclass).addClass(newclass).fadeIn('slow');
+				})
+			})
+		});
+	</script>
+</head>
+<body>
+     <div id="gallery">
+        <img id="display" src="images/thumb/shooes-1.jpg" alt="shooes display">
+        <img id="black" src="images/thumb/shooes-2.jpg" alt="shooes black">
+        <img id="gray" src="images/thumb/shooes-3.jpg" alt="shooes gray">
+        <img id="pink" src="images/thumb/shooes-4.jpg" alt="shooes pink">
+        <img id="colourfull" src="images/thumb/shooes-5.jpg" alt="shooes colourfull ">
+        <img id="formal" src="images/thumb/shooes-6.jpg" alt="shooes formal">
+        <img id="blue" src="images/thumb/shooes-7.jpg" alt="shooes blue ">
+        <img id="dark" src="images/thumb/shooes-8.jpg" alt="shooes dark">
+       
+       </div>
+	<div id="full-size" class="display">
+	    &nbsp;
+	</div>	
+</body>
+</html>

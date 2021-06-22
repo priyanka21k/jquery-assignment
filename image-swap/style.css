@@ -1,0 +1,55 @@
+div#gallery {
+	width:250px;
+	float:left;
+}
+div#gallery img {
+	width:100px;
+	margin:10px;
+}
+div#full-size {
+	float:left;
+	width:500px;
+	height:400px;
+	margin:10px;
+	background-size:contain;
+}
+
+div.display{
+   background: url('images/thumb/shooes-1.jpg') no-repeat left top;
+}
+
+div.black{
+   background: url('images/thumb/shooes-2.jpg') no-repeat left top;
+}
+
+div.gray{
+   background: url('images/thumb/shooes-3.jpg') no-repeat left top;
+}
+
+div.pink{
+   background: url('images/thumb/shooes-4.jpg') no-repeat left top;
+}
+
+div.colourfull{
+   background: url('images/thumb/shooes-5.jpg') no-repeat left top;
+}
+
+div.formal{
+   background: url('images/thumb/shooes-6.jpg') no-repeat left top;
+}
+
+div.blue{
+   background: url('images/thumb/shooes-7.jpg') no-repeat left top;
+}
+
+div.dark{
+   background: url('images/thumb/shooes-8.jpg') no-repeat left top;
+}
+body, button {
+    font-family: 'Jacques Francois', serif;
+    background-image: url('images/texture-seamless.jpg');
+    background-repeat: repeat;
+}
+img{
+border-color:red;
+}
